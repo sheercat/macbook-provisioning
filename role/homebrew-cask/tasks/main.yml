@@ -1,0 +1,24 @@
+homebrew_cask_packages:
+  - { name: emacs-mac }
+  - { name: iterm2 }
+  - { name: firefox }
+  - { name: google-chrome }
+  - { name: adobe-reader }
+  - { name: java }
+  - { name: skype }
+  - { name: slack }
+  - { name: sourcetree }
+  - { name: gitx }
+  - { name: karabiner }
+  - { name: seil }
+  - { name: flux }
+  - { name: dash }
+  - { name: skitch }
+  - { name: seashore }
+  - { name: atom }
+  - { name: kobito }
+  - { name: webstorm }
+  - { name: phpstorm }
+  - { name: intellij-idea }
+  - { name: vagrant }
+  - { name: virtualbox }
