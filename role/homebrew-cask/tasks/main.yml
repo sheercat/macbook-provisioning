@@ -1,3 +1,5 @@
+- name: HOMEBREW_CASK_OPTS設定
+  shell: export HOMEBREW_CASK_OPTS="--appdir=/Applications"
 - name: homebrew-cask のインストール
   homebrew: name=brew-cask state=latest
 - name: cask パッケージをインストール
