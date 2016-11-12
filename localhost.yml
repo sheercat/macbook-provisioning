@@ -1,9 +1,10 @@
-- hosts: localhost
+---
+- name: Setup my MacBook
+  hosts: localhost
   connection: local
-  gather_facts: no           
-  sudo: no
-  role:
-    - homebrew
-    - homebrew-cask
-    - oh-my-zsh
-    - ricty
+  gather_facts: no 
+  roles:
+    - { role: homebrew,      tags: [ homebrew ] }
+    - { role: homebrew-cask, tags: [ homebrew-cask ] }
+    - { role: oh-my-zsh,     tags: [ oh-my-zsh ] }
+    - { role: ricty,         tags: [ ricty ] }

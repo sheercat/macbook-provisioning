@@ -1,6 +1,6 @@
 - name: homebrew の tap リポジトリを追加
   homebrew_tap: tap={{ item }} state=present
-  with_items: homebrew_taps
+  with_items: "{{homebrew_taps}}"
 
 - name: homebrew をアップデート
   homebrew: update_homebrew=yes
@@ -14,7 +14,7 @@
       if item.install_options is not string
       else item.install_options
     }}
-  with_items: homebrew_packages
+  with_items: "{{homebrew_packages}}"
   register: brew_result
 - name: brew パッケージの情報保存先ディレクトリを作成
   file: path=brew_info state=directory
