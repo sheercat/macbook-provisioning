@@ -13,5 +13,11 @@ brew install ansible
 ```
 
 ```sh
-HOMEBREW_CASK_OPTS="--appdir=/Applications" ansible-playbook -i hosts -vv localhost.yml ↓ ansible-playbook -vv site.yml
+HOMEBREW_CASK_OPTS="--appdir=/Applications" ansible-playbook -i hosts -vv localhost.yml
+```
+
+↓ 
+
+```sh
+ansible-playbook -vv site.yml
 ```
